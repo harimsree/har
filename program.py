@@ -18,12 +18,12 @@ print("Subtotal = ",cart_total)
 if cart_total > 200:
     flat_10=10
 else:
-    flat_10=0
-    
+    flat_10=0  
 
 ## flat10 ##
 
 ## bulk5 ##
+
 def bulk5(qA,qB,qC):
     if qA>10:
         bulk_5_a=0.05*qA*20
@@ -51,12 +51,10 @@ if qA+qB+qC>20:
 else:
     bulk_10=0
     
-
-
 ## bulk10 ##
 
-
 ## tiered50 ##
+
 def tiered(qA,qB,qC):
     if qA+qB+qC>30 and qA>15 or qB>15 or qC>15:
         if qA>15:
@@ -78,7 +76,6 @@ def tiered(qA,qB,qC):
     
 tiered_50=tiered(qA,qB,qC)
 
-    
 ## tiered50 ##
 
 ## selection of discount ##
@@ -118,7 +115,6 @@ print("shipping fee = ",shipping_fee)
 ##   total    ##
 
 Total=cart_total-discount_amount+gift_wrap_fee+shipping_fee
-
 print("Total = ",Total,'$')
 
 ##   total    ##
